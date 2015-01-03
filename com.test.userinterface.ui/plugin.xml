@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+  <extension
+         point="org.eclipse.ui.views">
+      <view
+            name="User Interface"
+            icon="icons/annotation_obj.gif"
+            class="com.test.userinterface.views.ComponentTabbedView"
+            restorable="true"
+            closeable="false"
+            id="com.test.userinterface.views.ComponentsTabbedView.ID">
+      </view>
+      </extension>
+      <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="com.test.userinterface.editor.ComponentFormEditor"
+            default="false"
+            icon="icons/synced.gif"
+            id="com.test.userinterface.editor.ComponentFormEditor.ID"
+            name="Component Editor">
+      </editor>
+      <editor
+            class="com.test.userinterface.editor.ComponentPageFormEditor"
+            default="false"
+            icon="icons/synced.gif"
+            id="com.test.userinterface.editor.ComponentPageFormEditor.ID"
+            name="Page Editor">
+      </editor>
+   </extension>
+
+
+</plugin>
